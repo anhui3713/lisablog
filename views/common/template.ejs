@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Lisa.An Blog.</title>
+        <%include styles.ejs%>
+    </head>
+    <body>
+        <%include nav.ejs%>
+        <section class="blog-content">
+            <!-- 表示需要显示内容页面，由renderer组件进行替换成具体内容 -->
+            <content-page/>
+        </section>
+        <%include scripts.ejs%>
+    </body>
+</html>
