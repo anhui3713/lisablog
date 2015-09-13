@@ -14,6 +14,7 @@
     "morgan": "~1.6.1",
     "jquery": "~1.11.3",
     "bootstrap": "~3.3.5",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "requirejs": "~2.1.20"
   }
 }

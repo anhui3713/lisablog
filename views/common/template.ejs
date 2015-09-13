@@ -6,14 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Lisa.An Blog.</title>
+
+        <!-- 导入公共样式块 -->
         <%include styles.ejs%>
     </head>
     <body>
+        <!-- 导入导航条块 -->
         <%include nav.ejs%>
-        <section class="blog-content">
+
+        <!-- 所有内容都包含在blog-content中 -->
+        <section class="container blog-body">
             <!-- 表示需要显示内容页面，由renderer组件进行替换成具体内容 -->
             <content-page/>
         </section>
+
+        <!-- 导入公共javascript块 -->
         <%include scripts.ejs%>
     </body>
 </html>
