@@ -1,0 +1,22 @@
+.blog-list {
+    margin: 0px;
+    padding: 0px;
+    color: #666;
+}
+
+.blog-list > li {
+    list-style-type: none;
+    border-bottom: 1px solid #eee;
+    max-width: 600px;
+    background-color: #fff;
+
+}
+
+.blog-list > li:hover {
+    padding: 2%;
+}
+
+.blog-list > li .item-img img{
+    width: 100%;
+    max-width: 600px;
+}
