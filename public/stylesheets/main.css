@@ -1,0 +1,40 @@
+html,body,.body,.blog-body {
+    /*height: 100%;*/
+}
+
+/*
+    背景色
+    linear-gradient(top,rgba(255, 0, 0, .25) 14.3%,rgba(255,165,0, .25) 28.6%,rgba(255,255,0, .25) 42.9%,rgba(0, 255, 0, .25) 57.2%,rgba(0,255,255, .25) 71.5%,rgba(0, 0, 255, .25) 85.8%,rgba(128,0,128, .25) 100%);
+
+    rgba(255, 0, 0, .25) 14.3%,
+    rgba(255,165,0, .25) 28.6%,
+    rgba(255,255,0, .25) 42.9%,
+    rgba(0, 255, 0, .25) 57.2%,
+    rgba(0,255,255, .25) 71.5%,
+    rgba(0, 0, 255, .25) 85.8%,
+    rgba(128,0,128, .25) 100%
+*/
+body {
+    padding-top: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.body {
+    background: -webkit-linear-gradient(top,rgba(255, 0, 0, .25) 14.3%,rgba(255,165,0, .25) 28.6%,rgba(255,255,0, .25) 42.9%,rgba(0, 255, 0, .25) 57.2%,rgba(0,255,255, .25) 71.5%,rgba(0, 0, 255, .25) 85.8%,rgba(128,0,128, .25) 100%);
+    background: -moz-linear-gradient(top,rgba(255, 0, 0, .25) 14.3%,rgba(255,165,0, .25) 28.6%,rgba(255,255,0, .25) 42.9%,rgba(0, 255, 0, .25) 57.2%,rgba(0,255,255, .25) 71.5%,rgba(0, 0, 255, .25) 85.8%,rgba(128,0,128, .25) 100%);
+    background: -ms-linear-gradient(top,rgba(255, 0, 0, .25) 14.3%,rgba(255,165,0, .25) 28.6%,rgba(255,255,0, .25) 42.9%,rgba(0, 255, 0, .25) 57.2%,rgba(0,255,255, .25) 71.5%,rgba(0, 0, 255, .25) 85.8%,rgba(128,0,128, .25) 100%);
+    background: -o-linear-gradient(top,rgba(255, 0, 0, .25) 14.3%,rgba(255,165,0, .25) 28.6%,rgba(255,255,0, .25) 42.9%,rgba(0, 255, 0, .25) 57.2%,rgba(0,255,255, .25) 71.5%,rgba(0, 0, 255, .25) 85.8%,rgba(128,0,128, .25) 100%);
+    background: linear-gradient(top,rgba(255, 0, 0, .25) 14.3%,rgba(255,165,0, .25) 28.6%,rgba(255,255,0, .25) 42.9%,rgba(0, 255, 0, .25) 57.2%,rgba(0,255,255, .25) 71.5%,rgba(0, 0, 255, .25) 85.8%,rgba(128,0,128, .25) 100%);
+    /*background-attachment: fixed; */
+    /*overflow: hidden;*/
+}
+
+.blog-body {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #333;
+    /*overflow: auto;*/
+}
+
+a img {
+    border: 0px;
+}

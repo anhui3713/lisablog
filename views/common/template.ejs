@@ -7,20 +7,35 @@
 
         <title>Lisa.An Blog.</title>
 
-        <!-- 导入公共样式块 -->
-        <%include styles.ejs%>
+        <!-- Bootstrap 核心 CSS 文件 -->
+        <!-- <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+        <!-- 公共样式 -->
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+        <!-- 引入require模块 -->
+        <script type="text/javascript" src="requirejs/require.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
-        <!-- 导入导航条块 -->
-        <%include nav.ejs%>
+        <div class="body">
+            <!-- 导入导航条块 -->
+            <%include nav.ejs%>
 
-        <!-- 所有内容都包含在blog-content中 -->
-        <section class="container blog-body">
-            <!-- 表示需要显示内容页面，由renderer组件进行替换成具体内容 -->
-            <content-page/>
-        </section>
+            <!-- 所有内容都包含在blog-content中 -->
+            <section class="container blog-body">
+                <!-- 表示需要显示内容页面，由renderer组件进行替换成具体内容 -->
+                <content-page/>
+            </section>
 
-        <!-- 导入公共javascript块 -->
-        <%include scripts.ejs%>
+            <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<!-- <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<!-- <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+            <!-- 导入公共javascript块 -->
+            <script type="text/javascript">
+                require(["bootstrap"]);
+            </script>
+        </div>
     </body>
 </html>

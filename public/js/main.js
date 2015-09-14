@@ -17,6 +17,3 @@ require.config({
 		}
 	}
 });
-
-// 所有网页上引入bootstrap
-require(["bootstrap"]);
