@@ -11,6 +11,10 @@
     padding: 0px;
 }
 
+#photoTab .photo-panel > ul::after {
+    clear: both;
+}
+
 #photoTab .photo-panel > ul > li {
     float: left;
     padding: 10px;

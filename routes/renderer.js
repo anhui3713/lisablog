@@ -15,7 +15,7 @@ renderer.render = function (url, req, res) {
     var data = {
         navlist: {
             "/": "主页",
-            "/photos": "相册",
+            "/photo": "相册",
             // "/records": "点滴",
             "/skill": "技术",
             "/about": "关于"

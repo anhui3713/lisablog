@@ -1,0 +1,445 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* start editing from here */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/*--login form start here--*/ 
+body {
+    background: url(../images/pink.jpg)no-repeat;
+   -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 100%;
+}
+.signin-form {
+  width: 25%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin: 1em 0em 0em 0em;
+}
+.signin {
+  background: #fff;
+ 
+  margin: 1.5em auto 0em;
+
+  border-radius: 5px;
+}
+.signin-main {
+  padding: 1em 2em 0em 2em;
+}
+.signin h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000;
+  margin: 0.5em auto 1.5em;
+    text-align: center;
+}
+.signin a p {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #6c7079;
+  margin: 1em 0em 2em 0em;
+  text-align: center;
+}
+.signin a p:hover {
+  color: #2daae4;
+}
+/*----*/
+.mess{
+	border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 0em 0em 0.5em 0em;
+}
+.mess:hover {
+  border: 2px solid #009872;
+}
+.mess-new{
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.mess-new:hover{
+  border: 2px solid #009872;
+}
+.mess input[type="text"] {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #ccc;
+  padding: 10px 10px 10px 10px;
+  width: 83%;
+  outline: none;
+  border: none;
+}
+span.mess1 {
+  background: url(../images/mail.png)no-repeat 0px 0px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: sub;
+}
+span.mess2 {
+  background: url(../images/lock.png)no-repeat 0px 0px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: sub;
+}
+.mess input[type="password"] {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #ccc;
+  padding: 10px 10px 10px 10px;
+  width: 83%;
+  outline: none;
+  border: none;
+}
+.signin input[type="submit"] {
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+  width: 35%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 1em 0em 0em 0em;
+  background: #34495e;
+  cursor: pointer;
+}
+.send {
+  text-align: center;
+}
+.signin input[type="submit"]:hover {
+  background: #009872;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.twitter {
+  border-radius: 0px 0px 5px 5px;
+}
+.twitter a {
+  font-size: 1em;
+  font-weight: 500;
+  color: #fff;
+  background: #2daae4;
+  padding: 1em 0;
+  border-radius: 0px 0px 5px 5px;
+  display: block;
+  text-align:center;
+}
+.twitter a span{
+  width:24px;
+  height:24px;
+  background: url(../images/twitter.png)no-repeat 0px 0px ;
+ display: inline-block;
+  vertical-align: middle;
+  margin: 0 19px 0 0;
+}
+.twitter a:hover {
+  background:  #009872;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.news-letter {
+  margin: 2em auto 0em;
+  background: #fff;
+  padding: 1em 2em 2.2em 2em;
+  text-align: center;
+  border-radius: 5px;
+}
+.news-letter h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000;
+  margin: 0.5em auto 1.5em;
+}
+.mess-new input[type="text"] {
+ font-size: 0.9em;
+  font-weight: 500;
+  color: #ccc;
+  padding: 10px 10px 10px 3px;
+  width: 80%;
+  outline: none;
+  border: none;
+}
+
+.news-letter input[type="submit"] {
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+   padding: 10px;
+  width: 35%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 1.5em 0em 0em 0em;
+  background: #34495e;
+  cursor: pointer;
+}
+.news-letter input[type="submit"]:hover {
+  background: #009872;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+.copyright {
+  margin: 2em 0em 2em 0em;
+  text-align: center;
+}
+.copyright p {
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+}
+.copyright p a{
+  font-size: 1em;
+  font-weight: 400;
+  color: #fff;
+}
+.copyright p a:hover{
+	color: #5093FD;
+	 transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+/*--meadia quiries start here--*/
+@media(max-width:1440px){
+
+.mess input[type="text"] {
+  width: 81.5%;
+}
+.mess input[type="password"] {
+ width: 81%;
+}
+.signin {
+  margin: 2em auto 0em;
+}
+}
+@media(max-width:1366px){
+.signin {
+  background: #fff;
+}
+
+}
+@media(max-width:1280px){
+
+.news-letter input[type="submit"] {
+  width: 33%;
+}
+.signin-form {
+  width: 29%;
+}
+}
+@media(max-width:1024px){
+.signin h3 {
+  margin: 0.3em auto 1em;
+}
+.copyright {
+  margin: 2em 0em 2em 0em;
+}
+.signin input[type="submit"] {
+  margin: 1.5em 0em 0em 0em;
+  padding: 10px;
+}
+.signin a p {
+  margin: 1em 0em 1.2em 0em;
+}
+.signin-form {
+  width: 35%;
+}
+.copyright p {
+  font-size: 0.9em;
+}
+.news-letter h3 {
+  margin: 0.3em auto 1em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+}
+@media(max-width:768px){
+.copyright {
+  margin: 10.5em 0em 4em 0em;
+}
+.signin-form {
+  width: 47%;
+}
+}
+@media(max-width:736px){
+.mess-new input[type="text"] {
+  width: 79%;
+}	
+.mess input[type="text"] {
+  width: 79%;
+}
+.mess input[type="password"] {
+  width: 79%;
+}
+}
+@media(max-width:667px){
+.mess input[type="text"] {
+ width: 79%;
+}	
+.mess input[type="password"] {
+  width: 79%;
+}
+
+.mess-new input[type="text"] {
+  width: 77%;
+}
+.signin-form {
+  width: 55%;
+}
+}
+@media(max-width:640px){
+
+.signin-form {
+  width: 57%;
+}
+}
+@media(max-width:600px){
+.signin-form {
+  width: 60%;
+}
+}
+@media(max-width:568px){
+.signin-form {
+  width: 65%;
+}
+}
+@media(max-width:480px){
+.copyright {
+  margin: 5em 0em 2em 0em;
+}
+.copyright p {
+  font-size: 0.85em;
+}
+.signin-form {
+  width: 75%;
+}
+}
+@media(max-width:414px){
+.signin-form {
+  width: 90%;
+}
+h1 {
+  font-size: 1.6em;
+}
+}
+@media(max-width:384px){
+
+.mess input[type="text"] {
+  width: 77%;
+}
+.mess input[type="password"] {
+  width: 77%;
+}
+.mess-new input[type="text"] {
+ width: 77%;
+}
+.signin-form {
+  width: 95%;
+}
+h1 {
+  font-size: 1.5em;
+}
+}
+@media(max-width:375px){
+.signin-form {
+  width: 95%;
+}
+h1 {
+  font-size: 1.4em;
+}
+}
+@media(max-width:320px){
+
+.signin h3 {
+  font-size: 1.2em;
+  margin: 0.3em auto 0.8em;
+}
+.mess input[type="text"] {
+  font-size: 0.78em;
+  padding: 7px 35px 7px 10px;
+  width: 65%;
+}
+.mess input[type="password"] {
+  padding: 7px 35px 7px 10px;
+  width: 65%;
+}
+.signin input[type="submit"] {
+  font-size: 0.8em;
+  padding: 9px;
+  margin: 1.5em 0em 0em 0em;
+}
+.copyright {
+  margin: 1.5em 0em 1.5em 0em;
+}
+.copyright p {
+  font-size: 0.8em;
+}
+.news-letter h3 {
+  font-size: 1.2em;
+}
+.news-letter input[type="submit"] {
+  font-size: 0.8em;
+   width: 35%;
+  padding: 9px;
+}
+.mess-new input[type="text"] {
+  padding: 7px 35px 7px 10px;
+  font-size: 0.78em;
+  width: 65%;
+}
+.signin a p {
+  margin: 1em 0em 1em 0em;
+  font-size: 0.75em;
+}
+h1 {
+  font-size: 1.2em;
+}
+.signin-form {
+  width: 97%;
+}
+.twitter a {
+  padding: 0.5em 0;
+}
+}
