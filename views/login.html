@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Lisa Blog.</title>
+	<!-- Custom Theme files -->
+	<link href="stylesheets/main.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="stylesheets/login.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+	<!--sign in form start here-->
+	<h1>Lisa Blog.</h1>
+	<div class="signin-form">
+		<div class="signin login">
+			<div class="signin-main">
+				<h3>赶快登入</h3>
+				<form action="/">
+					<div class="mess">
+						<input type="text" class="active" placeholder="输入账号..."/>
+						<span class="mess1"> </span>
+					</div>
+					<div class="mess">
+						<input type="password" placeholder="输入密码..." />
+						<span class="mess2"> </span>
+					</div>
+					<div class="send">
+						<input type="submit" value="登陆">
+					</div>
+				</form>
+				<div class="anchors">
+					<a id="forgotPassword" href="javascript: void(0);"><p>忘记密码</p></a>
+					<a id="register" href="#register"><p>免费注册</p></a>
+				</div>
+			</div>
+			<div class="login-plugin">
+				<ul>
+					<li class="login-by-qq"> <a href="javascript: void(0);"></a></li>
+					<li class="login-by-sina"> <a href="javascript: void(0);"></a></li>
+					<li class="login-by-baidu"> <a href="javascript: void(0);"></a></li>
+					<li class="login-by-linkedin"> <a href="javascript: void(0);"></a></li>
+					<li class="login-by-google"> <a href="javascript: void(0);"></a></li>
+					<li class="login-by-github"> <a href="javascript: void(0);"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="signin regiter">
+			<div class="signin-main">
+				<h3>免费注册</h3>
+				<form action="/">
+					<div class="mess">
+						<input type="text" class="active" placeholder="输入账号..."/>
+						<span class="mess1"> </span>
+					</div>
+					<div class="mess">
+						<input type="password" placeholder="输入密码..." />
+						<span class="mess2"> </span>
+					</div>
+					<div class="send">
+						<input type="submit" value="登陆">
+					</div>
+				</form>
+				<div class="anchors">
+					<a id="login" href="#login"><p>已有账号？直接登陆</p></a>
+				</div>
+			</div>
+			<div class="login-plugin">
+				<ul>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 引入require模块 -->
+	<script type="text/javascript" src="requirejs/require.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		require(["jquery"], function ($) {
+			var signinForm = $(".signin-form");
+			location.hash = location.hash || "#login";
+			var toggles = {"#login": $("#login"),"#register": $("#register")};
+
+			toggles["#login"].on("click", function () {
+				signinForm.removeClass("show-register").addClass("show-login");
+			});
+
+			toggles["#register"].on("click", function () {
+				signinForm.removeClass("show-login").addClass("show-register");
+			});
+//			console.log(location.hash)
+			toggles[location.hash].click();
+		});
+	</script>
+
+<!--sign in form end here-->
+</body>
+</html>
