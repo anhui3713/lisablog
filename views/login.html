@@ -16,7 +16,7 @@
 	<div class="signin-form">
 		<div class="signin login">
 			<div class="signin-main">
-				<h3>赶快登入</h3>
+				<h3>立即进入</h3>
 				<form action="/">
 					<div class="mess">
 						<input type="text" class="active" placeholder="输入账号..."/>
@@ -26,17 +26,15 @@
 						<input type="password" placeholder="输入密码..." />
 						<span class="mess2"> </span>
 					</div>
-					<div class="send">
+					<div class="send anchors">
 						<input type="submit" value="登陆">
+						<a id="forgotPassword" href="javascript: void(0);"><p>忘记密码</p></a>
+						<a href="#register"><p>免费注册</p></a>
 					</div>
 				</form>
-				<div class="anchors">
-					<a id="forgotPassword" href="javascript: void(0);"><p>忘记密码</p></a>
-					<a id="register" href="#register"><p>免费注册</p></a>
-				</div>
 			</div>
 			<div class="login-plugin">
-				<ul>
+				<ul class="scale-list">
 					<li class="login-by-qq"> <a href="javascript: void(0);"></a></li>
 					<li class="login-by-sina"> <a href="javascript: void(0);"></a></li>
 					<li class="login-by-baidu"> <a href="javascript: void(0);"></a></li>
@@ -50,38 +48,36 @@
 		<div class="signin regiter">
 			<div class="signin-main">
 				<h3>免费注册</h3>
-				<form action="/">
+				<form action="/register">
 					<div class="mess">
-						<input type="text" class="active" placeholder="输入账号..."/>
+						<input type="text" name="username" class="active" placeholder="输入账号..."/>
 						<span class="mess1"> </span>
 					</div>
 					<div class="mess">
-						<input type="password" placeholder="输入密码..." />
+						<input type="password" name="password" placeholder="输入密码..." />
 						<span class="mess2"> </span>
 					</div>
-					<div class="send">
-						<input type="submit" value="登陆">
+					<div class="mess">
+						<input type="password" name="confirm" placeholder="确认密码..." />
+						<span class="mess2"> </span>
+					</div>
+					<div class="send anchors">
+						<a href="#login"><p>已有账号？直接登陆</p></a>
+						<input type="submit" value="提交注册">
 					</div>
 				</form>
-				<div class="anchors">
-					<a id="login" href="#login"><p>已有账号？直接登陆</p></a>
-				</div>
 			</div>
-			<div class="login-plugin">
-				<ul>
-
-				</ul>
-			</div>
+			<!-- <div class="login-plugin">
+			</div> -->
 		</div>
 	</div>
 	<!-- 引入require模块 -->
 	<script type="text/javascript" src="requirejs/require.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script>
+	<script type="text/javascript">
 		require(["jquery"], function ($) {
 			var signinForm = $(".signin-form");
-			location.hash = location.hash || "#login";
-			var toggles = {"#login": $("#login"),"#register": $("#register")};
+			var toggles = {"#login": $("a[href='#login']"),"#register": $("a[href='#register']")};
 
 			toggles["#login"].on("click", function () {
 				signinForm.removeClass("show-register").addClass("show-login");
@@ -90,7 +86,8 @@
 			toggles["#register"].on("click", function () {
 				signinForm.removeClass("show-login").addClass("show-register");
 			});
-//			console.log(location.hash)
+
+			location.hash = location.hash || "#login";
 			toggles[location.hash].click();
 		});
 	</script>

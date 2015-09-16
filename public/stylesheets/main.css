@@ -43,11 +43,11 @@ a img {
 }
 
 .scale-list > li, .scale .item, .scale-item {
-    -webkit-transition: -webkit-transform .1s;
-    -moz-transition:    -moz-transform .1s;
-    -ms-transition:     -ms-transform .1s;
-    -o-transition:      -o-transform .1s;
-    transition:         transform .1s;
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition:    -moz-transform .2s;
+    -ms-transition:     -ms-transform .2s;
+    -o-transition:      -o-transform .2s;
+    transition:         transform .2s;
 }
 
 .scale-list > li:hover, .scale .item:hover, .scale-item:hover {

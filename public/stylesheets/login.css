@@ -1,4 +1,3 @@
-/*--login form start here--*/
 body {
     margin: 0;
     padding: 1em 0px 0px;
@@ -12,10 +11,10 @@ body {
 .signin-form {
     width: 25%;
     margin: 0 auto;
-    box-shadow: 0px 0px 10px #333;
     border-radius: 0px 0px 5px 5px;
     position:relative;
 }
+
 
 h1 {
     font-size: 2em;
@@ -25,14 +24,14 @@ h1 {
     margin: 1em 0em 0em 0em;
 }
 
-.signin {-
+.signin {
     background: #fff;
-    /*margin: 1.5em auto 0em;*/
     width: 100%;
     top: 0px;
     left: 0px;
     border-radius: 0px 0px 7px 7px;
     position: absolute;
+    box-shadow: 0px 0px 10px #333;
 
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
@@ -70,7 +69,6 @@ h1 {
     color: #2daae4;
 }
 
-/*----*/
 .mess {
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -84,7 +82,6 @@ h1 {
 .mess input[type="text"] {
     font-size: 0.9em;
     font-weight: 500;
-    color: #ccc;
     padding: 10px 10px 10px 10px;
     width: 83%;
     outline: none;
@@ -110,7 +107,6 @@ span.mess2 {
 .mess input[type="password"] {
     font-size: 0.9em;
     font-weight: 500;
-    color: #ccc;
     padding: 10px 10px 10px 10px;
     width: 83%;
     outline: none;
@@ -179,11 +175,6 @@ span.mess2 {
 
 .login-plugin > ul > li:hover {
     opacity: 1;
-    -webkit-transform: scale(1.05, 1.05);
-    -moz-transform: scale(1.05, 1.05);
-    -ms-transform: scale(1.05, 1.05);
-    -o-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
 }
 
 .login-plugin > ul > li > a {
