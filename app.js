@@ -13,7 +13,7 @@ var skill = require('./routes/skill');
 var app = express();
 
 // 监听80端口
-process.env.PORT = 80;
+//process.env.PORT = 80;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
